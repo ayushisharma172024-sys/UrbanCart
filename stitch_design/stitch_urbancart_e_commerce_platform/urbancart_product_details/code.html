@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#2f3038", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c4ff", "surface-container-low": "#f4f2fd", "on-tertiary-container": "#dee3ff", "tertiary-fixed-dim": "#b4c5ff", "surface": "#fbf8ff", "surface-container": "#eeedf7", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#003ea8", "outline": "#737688", "secondary": "#5f5e5e", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-secondary-fixed-variant": "#474646", "surface-container-high": "#e8e7f1", "secondary-container": "#e5e2e1", "secondary-fixed": "#e5e2e1", "inverse-on-surface": "#f1effa", "outline-variant": "#c3c5d9", "inverse-primary": "#b7c4ff", "primary-container": "#0052ff", "surface-dim": "#dad9e3", "on-secondary-container": "#656464", "on-background": "#1a1b22", "on-primary-container": "#dfe3ff", "on-primary-fixed": "#001452", "background": "#fbf8ff", "primary": "#003ec7", "on-surface-variant": "#434656", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed": "#1c1b1b", "on-primary": "#ffffff", "tertiary-container": "#165be3", "tertiary-fixed": "#dbe1ff", "tertiary": "#0044b7", "on-surface": "#1a1b22", "primary-fixed": "#dde1ff", "on-error": "#ffffff", "on-tertiary-fixed": "#00174b", "on-primary-fixed-variant": "#0038b6", "surface-tint": "#004ced", "surface-container-highest": "#e3e1ec", "surface-variant": "#e3e1ec", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#c8c6c5" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, fontFamily: { "label-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "price-md": ["Inter"], "body-md": ["Inter"], "display-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "price-lg": ["Inter"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "price-lg": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="UrbanCart Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XND7AS3rpwq6aOH9icdOJMYgj7ZKP4aTOj8iuvmGG6Op0LMWyQXBJXBKC_oXDXJx1hHU28EDu_seY8gBUe7O_Fj4BCBWHpdXOnrlBK14zwINY80Ds7Hl9TPCpu3otZh7a1uFGOn28MQGwA2ZZ22xJ-Cryrr13Wz7xozTIcPnsl3AULMmqaynDFMNGZtOMgdJrSwXTA5byff7xjDal5pEO3ABCzq0U8_gPQs4ZF7FnyPAQhv5uwlcYqgQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Product Details</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Shopping Cart" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[14px] h-[14px] px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">2</span></a><a aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFw0Hcn0BTxjaa_zKHHMxZjp92bpiqstkmiJebzlsnPWMk5J8EeDIk0IwAEyq5m0hdZRoLpyX_rNG7TKZEL_JmAyqQgjgv959nhER6gN0SoOBeeAdYmNlkZVVNtr3M9mUUzIcFNVTyMZfIi3jWIAeyFruMnKesYtCiTdNNaQvkww-ZoNrO-Ee6lWhl7O7kxICU1xXvkFgeFgh9ORTVSLVGoZbNmOYAxZhtt5nrPoJ-O5pms6f2o9_L"/></a></div></div></header><main class="w-full min-h-screen bg-surface pt-16 pb-safe"><div class="flex flex-col w-full pb-28">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumbs" class="px-margin py-space-sm flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary whitespace-nowrap" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary whitespace-nowrap" href="#">Electronics</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary whitespace-nowrap" href="#">Audio</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[130px]">AeroTech Ultra ANC</span>
+</nav>
+<!-- Interactive Visual Gallery Carousel -->
+<section class="relative w-full overflow-hidden bg-surface-container-low" id="gallery-container">
+<div class="flex w-full transition-transform duration-300 ease-out snap-x snap-mandatory overflow-x-auto no-scrollbar" id="carousel-track">
+<!-- Slide 1: Hero Studio Shot -->
+<div class="w-full flex-shrink-0 snap-center relative aspect-[4/3] flex items-center justify-center p-space-md">
+<img class="w-full h-full object-contain drop-shadow-md" data-alt="High-end matte stealth black AeroTech Ultra wireless over-ear noise-cancelling headphones isolated on a soft architectural plinth with studio rim lighting, pure European minimalist product design aesthetics, showcasing polished metallic pivot hinges, premium microfiber ear pads, subtle electric blue LED status indicator, 8k commercial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh4NHsFuxnViVE5lPCsL_7XZhojLlai05NX64MyEjVSjBp3kzOxT-dyKh8caEWXp9RfHY0ynbsrg2J-ixYZiegF7EvpzNVDS8aWs18v0cDeMUDQ4mLSh6IgGmmNO7-euayjBwkCJff3dzLOlkk_5fsrohBt4W1aiaffBI9i7GQSrCjRfxqjqVru9QviNAO3Gpw-p5pqJhKOeF_jgMRHtW06cE89VBMbsgq-jdrzWLpFJkVwrEmO889"/>
+</div>
+<!-- Slide 2: Lifestyle / On-Head Model -->
+<div class="w-full flex-shrink-0 snap-center relative aspect-[4/3] flex items-center justify-center p-space-md">
+<img class="w-full h-full object-contain drop-shadow-md" data-alt="Side profile editorial portrait of a modern stylish listener wearing the AeroTech Ultra matte black ANC headphones inside an airy sunlit architectural concrete loft, soft dramatic window lighting highlighting the headphone sleek ergonomics and plush memory foam cushion, high fashion catalog style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZPGzoDdOi9r1cK7jU2z0v1H2FF5XC8_2BlNq_Ca2suk2Dw5Ge5pmnO-Qm9-8R8j3VI-eP4_vGMvNYT0WBmPauhjvSBQvOo3bjJyqyPwSXko9cpLnpGUHAh6UH4Qa_5z9H1CHvP0dHFVz0NcYuZFLnAJoZuOqMNQnv-_8cUt7n7kIGGrg8S1rX9kMvzdyc37p_UZvlfnfdCaxmbFsmn6XEYlYzFe1mV17zV3lEg9Hd7JNZpgAdxhqL"/>
+</div>
+<!-- Slide 3: Folding & Luxury Travel Case -->
+<div class="w-full flex-shrink-0 snap-center relative aspect-[4/3] flex items-center justify-center p-space-md">
+<img class="w-full h-full object-contain drop-shadow-md" data-alt="Minimalist hard-shell ballistic nylon travel case lying open beside AeroTech Ultra ANC headphones folded compactly with a braided black auxiliary cable and magnetic aircraft adapter neatly tucked, warm studio light, clean luxury tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbO0FJtDt1ZuPznt92Fap0t12omQgj-axjLNqF8Khdr3C5OxxyEHTXQEKYNrkYvca22IJNc7hPlyE1DSSNWdtmqkobmiw67UZuVtnpMgXUGRgWHZvBcAPCkfjNbCQH87SvcLOrncL9IW4rj25i79fdWiczONH_pAtjslzO7KO7AWOwmWfkb7rgCHpzP5zIuEreHBrQVPGIi58f-xyC-u6mL01744lf12NZ7dXzlqcnuhmWTmNHLxCO"/>
+</div>
+<!-- Slide 4: Cushion Detail & Drivers -->
+<div class="w-full flex-shrink-0 snap-center relative aspect-[4/3] flex items-center justify-center p-space-md">
+<img class="w-full h-full object-contain drop-shadow-md" data-alt="Macro close-up shot of the ear cushion perforations and custom 40mm beryllium acoustic driver mesh chamber on AeroTech Ultra ANC headphones, subtle high-precision laser-etched typography, cinematic shallow depth of field, premium texture definition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDYDJIUWUDlOJ09E8aNR2a9vifZ7fAYBi5uDCyUt8CGzWqy9qVhQVXgm3ThpWVcg0XmTz0fN4SSjKBSXLAyFB4VT988slntiIxKquM9tX1G7cLH2Ctn6lRc3xhcB7j5sJLilmjh1QWFOOr_NUR1UUtmWVWhWxZ70eQWPDSKR9S_b_FLQBpVhG86ZLaKOLnYb5dlXm34EIOAdwx6Lz8sTqB2TcwajGuFs4W_1uJ8bTUBagxIEcEsrqd"/>
+</div>
+</div>
+<!-- Floating 360 Badge & Wishlist -->
+<div class="absolute top-3 left-margin flex items-center gap-1.5 bg-inverse-surface/85 backdrop-blur-md px-2.5 py-1 rounded-full text-inverse-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim animate-spin" style="animation-duration: 9s;">360</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-inverse-on-surface">360° Studio View</span>
+</div>
+<button class="absolute top-3 right-margin w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center justify-center text-on-surface active:scale-90 transition-transform" id="wishlist-btn" onclick="toggleWishlist()">
+<span class="material-symbols-outlined text-[20px] transition-colors" id="wishlist-icon">favorite_border</span>
+</button>
+<!-- Carousel Dots Pagination -->
+<div class="absolute bottom-3 inset-x-0 flex items-center justify-center gap-1.5">
+<button class="carousel-dot w-6 h-1.5 rounded-full bg-primary transition-all duration-300" onclick="goToSlide(0)"></button>
+<button class="carousel-dot w-2 h-1.5 rounded-full bg-outline-variant transition-all duration-300" onclick="goToSlide(1)"></button>
+<button class="carousel-dot w-2 h-1.5 rounded-full bg-outline-variant transition-all duration-300" onclick="goToSlide(2)"></button>
+<button class="carousel-dot w-2 h-1.5 rounded-full bg-outline-variant transition-all duration-300" onclick="goToSlide(3)"></button>
+</div>
+</section>
+<!-- Product Vital Data Block -->
+<div class="px-margin pt-space-md flex flex-col gap-space-sm">
+<!-- Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-inverse-surface text-inverse-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bolt</span>
+        BESTSELLER #1 IN AUDIO
+      </span>
+<span class="bg-primary-container text-on-primary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold shadow-sm">
+        25% OFF
+      </span>
+<span class="bg-surface-container-high text-on-surface-variant px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+        SPATIAL AUDIO
+      </span>
+</div>
+<!-- Product Title -->
+<h1 class="font-headline-md text-headline-md text-on-surface leading-tight">
+      AeroTech Ultra ANC Wireless Headphones
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-1">
+      Spatial Audio Engine • 40h HyperCharge • Quad-Mic ENC Array
+    </p>
+<!-- Ratings and Ask Question Row -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-full">
+<span class="font-label-md text-label-md text-on-surface font-semibold">4.9</span>
+<span class="material-symbols-outlined text-[15px] text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<a class="font-body-sm text-body-sm text-primary font-medium underline underline-offset-2" href="#reviews-section">1,842 verified reviews</a>
+</div>
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+<span>Ask Question</span>
+</button>
+</div>
+<!-- Pricing Summary -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-baseline gap-2.5 flex-wrap">
+<span class="font-price-lg text-price-lg text-on-surface tracking-tight font-bold" id="main-price">₹11,999</span>
+<span class="font-body-md text-body-md text-outline line-through" id="slashed-price">₹15,999</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">
+          Save ₹4,000
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inclusive of all taxes &amp; regulatory duties</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">payments</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+          EMI begins from <strong class="font-semibold text-primary">₹1,080/mo</strong> with no-cost tenure options.
+        </p>
+</div>
+</div>
+<!-- Color Variant Selector -->
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Colorway:</label>
+<span class="font-label-md text-label-md text-primary font-bold" id="selected-color-label">Stealth Black</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Stealth Black (Active) -->
+<button aria-label="Stealth Black" class="color-swatch flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-highest shadow-sm active:scale-95 transition-all" onclick="selectColor(this, 'Stealth Black', '#1a1b22')">
+<span class="w-4 h-4 rounded-full bg-[#17181c] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Stealth Black</span>
+</button>
+<!-- Titanium Silver -->
+<button aria-label="Titanium Silver" class="color-swatch flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container shadow-sm active:scale-95 transition-all" onclick="selectColor(this, 'Titanium Silver', '#c3c5d9')">
+<span class="w-4 h-4 rounded-full bg-[#d5d7e0] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Titanium Silver</span>
+</button>
+<!-- Matte Navy -->
+<button aria-label="Matte Navy" class="color-swatch flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container shadow-sm active:scale-95 transition-all" onclick="selectColor(this, 'Matte Navy', '#165be3')">
+<span class="w-4 h-4 rounded-full bg-[#1b2b48] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Matte Navy</span>
+</button>
+</div>
+</div>
+<!-- Audio Edition Selector -->
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Audio Bundle Edition:</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="edition-card p-space-sm rounded-xl text-left bg-surface-container-highest shadow-sm transition-all flex flex-col justify-between" id="edition-standard" onclick="selectEdition('standard')">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Standard</span>
+<span class="material-symbols-outlined text-[18px] text-primary checkmark-icon">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Includes Travel Case &amp; 3.5mm Aux</p>
+</div>
+<span class="font-price-md text-price-md text-on-surface font-bold mt-2">₹11,999</span>
+</button>
+<button class="edition-card p-space-sm rounded-xl text-left bg-surface-container shadow-sm transition-all flex flex-col justify-between opacity-80" id="edition-dac" onclick="selectEdition('dac')">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Studio Pro DAC</span>
+<span class="material-symbols-outlined text-[18px] text-outline checkmark-icon">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adds 32-bit Lossless USB-C DAC (+₹1,999)</p>
+</div>
+<span class="font-price-md text-price-md text-primary font-bold mt-2">₹13,998</span>
+</button>
+</div>
+</div>
+<!-- Delivery Pincode Checker -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm shadow-sm mt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">local_shipping</span>
+<span class="font-label-md text-label-md font-semibold">Delivery Availability</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Free Express Delivery</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full h-11 px-3.5 bg-surface-container-lowest text-on-surface rounded-lg font-body-md text-body-md focus:outline-none placeholder:text-outline shadow-inner" id="pincode-input" maxlength="6" placeholder="Enter 6-digit Pincode" type="text" value="560001"/>
+</div>
+<button class="h-11 px-5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md active:scale-95 transition-transform" onclick="checkPincode()">
+          Check
+        </button>
+</div>
+<!-- Real-time Delivery Status Pill -->
+<div class="flex items-center gap-2 text-on-surface bg-surface-container-lowest p-2.5 rounded-lg shadow-sm" id="pincode-result">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="min-w-0 flex-1">
+<p class="font-body-sm text-body-sm text-on-surface truncate">
+            Delivering to <strong class="font-semibold text-primary">560001 (Bengaluru)</strong>
+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+            Arrives by <strong class="text-on-surface font-bold">Tomorrow, 2:00 PM</strong> • Free Express Delivery
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Highlights Bento Grid -->
+<section class="px-margin pt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Engineering Highlights</h2>
+<span class="font-label-sm text-label-sm text-primary font-bold">AUDIO LAB SPEC</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Highlight 1: Playtime -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-primary-container/15 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]">battery_charging_full</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">40H Play</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">10 min HyperCharge gives 5 hours playback.</p>
+</div>
+</div>
+<!-- Highlight 2: Drivers -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-primary-container/15 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]">graphic_eq</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">40mm Beryllium</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Ultra-stiff diaphragm for lightning transient response.</p>
+</div>
+</div>
+<!-- Highlight 3: ANC -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-primary-container/15 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]">noise_aware</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">-48dB ANC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hybrid 4-mic cancellation shuts out jet &amp; metro rumble.</p>
+</div>
+</div>
+<!-- Highlight 4: Multipoint LDAC -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-primary-container/15 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">BT 5.4 + LDAC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Seamless two-device pairing with 990kbps Hi-Res audio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specifications Accordion -->
+<section class="px-margin pt-space-xl flex flex-col gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Detailed Specifications</h2>
+<div class="flex flex-col gap-2">
+<!-- Item 1: Audio Specs -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-sm">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('tab-audio')">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">surround_sound</span>
+            Acoustic &amp; Drivers
+          </span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200" id="tab-audio-icon">expand_more</span>
+</button>
+<div class="px-space-md pb-space-md pt-0 text-on-surface flex flex-col gap-2" id="tab-audio-content">
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Driver Architecture</span>
+<span class="font-medium text-on-surface">40mm Custom Electro-Acoustic Beryllium</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Frequency Response</span>
+<span class="font-medium text-on-surface">10 Hz – 42,000 Hz</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Total Harmonic Distortion</span>
+<span class="font-medium text-on-surface">&lt; 0.08% @ 1kHz, 100dB SPL</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Impedance (Passive)</span>
+<span class="font-medium text-on-surface">32 Ohms</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Connectivity -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-sm">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('tab-conn')">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">bluetooth</span>
+            Wireless &amp; Latency
+          </span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200" id="tab-conn-icon">expand_more</span>
+</button>
+<div class="px-space-md pb-space-md pt-0 text-on-surface hidden flex flex-col gap-2" id="tab-conn-content">
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Bluetooth Version</span>
+<span class="font-medium text-on-surface">Bluetooth 5.4 Low Energy Audio</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Codecs Supported</span>
+<span class="font-medium text-on-surface">LDAC, AAC, aptX Adaptive, SBC</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Ultra-Low Latency Mode</span>
+<span class="font-medium text-on-surface">38ms Dedicated Gaming Mode</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Battery & Charging -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-sm">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('tab-bat')">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">bolt</span>
+            Power &amp; Endurance
+          </span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200" id="tab-bat-icon">expand_more</span>
+</button>
+<div class="px-space-md pb-space-md pt-0 text-on-surface hidden flex flex-col gap-2" id="tab-bat-content">
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>ANC On Runtime</span>
+<span class="font-medium text-on-surface">40 Hours continuous playback</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>ANC Off Runtime</span>
+<span class="font-medium text-on-surface">58 Hours</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Connector</span>
+<span class="font-medium text-on-surface">USB Type-C Fast Charge (5V/2A)</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Box Contents -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-sm">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('tab-box')">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">inventory_2</span>
+            In The Box
+          </span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200" id="tab-box-icon">expand_more</span>
+</button>
+<div class="px-space-md pb-space-md pt-0 text-on-surface hidden flex flex-col gap-2" id="tab-box-content">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            • AeroTech Ultra ANC Headphone unit<br/>
+            • Rigid Ballistic Shell Travel Case<br/>
+            • 1.2m Shielded 3.5mm Gold-Plated Audio Cord<br/>
+            • Braided USB-C to USB-C Fast-Charging Cable<br/>
+            • Dual-Prong Flight Seat Audio Adapter<br/>
+            • 2-Year International Warranty Registration Card
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews Summary Section -->
+<section class="px-margin pt-space-xl flex flex-col gap-space-md" id="reviews-section">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Customer Reviews</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real experiences from verified buyers</p>
+</div>
+<button class="bg-surface-container px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors">
+        Write Review
+      </button>
+</div>
+<!-- Rating Breakdown Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
+<div class="flex flex-col items-center justify-center text-center pr-2">
+<span class="font-display-mobile text-display-mobile text-on-surface font-bold leading-none">4.9</span>
+<div class="flex text-primary-container my-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">1,842 ratings</span>
+</div>
+<!-- Star Distribution Bars -->
+<div class="flex-1 flex flex-col gap-1.5">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 text-right">5</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 88%;"></div>
+</div>
+<span class="w-8 text-right font-medium text-on-surface">88%</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 text-right">4</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 9%;"></div>
+</div>
+<span class="w-8 text-right font-medium text-on-surface">9%</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 text-right">3</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 2%;"></div>
+</div>
+<span class="w-8 text-right font-medium text-on-surface">2%</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 text-right">2</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 1%;"></div>
+</div>
+<span class="w-8 text-right font-medium text-on-surface">1%</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 text-right">1</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 0%;"></div>
+</div>
+<span class="w-8 text-right font-medium text-on-surface">0%</span>
+</div>
+</div>
+</div>
+<!-- Reviewer Testimonials -->
+<div class="flex flex-col gap-3">
+<!-- Verified Buyer Review 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center">
+              AK
+            </div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Aarav Kapoor</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Verified Buyer • Mumbai</span>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">3 days ago</span>
+</div>
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          "The ANC performance easily outperforms my older Sony cans. Flights are dead silent now. LDAC streaming from Apple Music sounds phenomenal with pristine instrument separation."
+        </p>
+<!-- Buyer Photo Attachments -->
+<div class="flex items-center gap-2 pt-1">
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm" data-alt="Real buyer customer unboxing photo showing AeroTech Ultra headphones sitting on a minimal wooden home office desk with subtle keyboard backlighting, clean casual customer photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALF_qko61c01VGiDslzzp6vzQdJl4BTLb7UcDHaWQ2f4CtNdj6nfb6z6qQwOEapFFHXBU46mQNa7-xz8Gp3P_sTK1AXMWPw8RtI9GAIgQSnEanqZPGHH9MoPUjvgszReV43rFw4JPO7bC8bdiqTdPZrtZJc3Hi7BngKrvz9UI3u-__qoBmcb5JMakimVgj_ufXhr6CyhlwMJBx5E5RI7pEGbqO64thRkcSQuqNb_2cG8gYj-BhcENm"/>
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm" data-alt="Customer holding the AeroTech Ultra headphones showing soft memory foam earpads in hand, daylight natural review photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmh_QxJfxdWEtCVOxbqQ6Bzd0a_RmG28ffBBYQQDHyLpsKk9fyKGrXgoKqanYUcCVW3AStO6pIKS790wDXxe61EdN4PJr9JscjkNYQVAMR2bcS8sSKzaXQ4XfomRkNLAuDPBOmH56nzXXvb_tixXU_VqN6cNLCJuSMaT4aYHw_sUy_27lHEkhQu0LH1UywlB4TT-hYVeKzVOaxUB0b-ySvLzfzh6HqoiIqkAC0ftxznV7F9b66P-iR"/>
+</div>
+</div>
+<!-- Verified Buyer Review 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center justify-center">
+              NM
+            </div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Neha Menon</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Verified Buyer • Bengaluru</span>
+</div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">1 week ago</span>
+</div>
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          "Zero clamping fatigue after 6-hour work sprints. Call quality is surprisingly sharp even in crowded coffee shops. Multipoint switching between MacBook and iPhone is instantaneous!"
+        </p>
+</div>
+</div>
+</section>
+<!-- Frequently Bought Together Bundle Card -->
+<section class="px-margin pt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Frequently Bought Together</h2>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">Bundle &amp; Save ₹1,299</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+<!-- Item 1: Headphone -->
+<div class="flex flex-col items-center w-24 flex-shrink-0">
+<div class="w-20 h-20 rounded-xl bg-surface-container-lowest p-2 shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Small thumbnail of AeroTech Ultra ANC headphones on clean white backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-xMI0KrCnqlfIsv7kZqMPNOwSISCuzt9TbKN07njN7iBvVlIOqjXmg484M4A2TlYQumbfxHQPcExNjB-blSk-eOJ4PtLbxqGsGCo3U8SnbCAaq-snrT2AnWokbJFXbCCZlwVwoNwG4UUbAx-FlfzHQU0xiWtRiiwciyuoVEIQ-1zVCTN-zHb2NONwirgMdTK7S0P9xOOnfYlwi1iU6Bx1A7ItO1znnKnxkCAQ3FYvt34CfdqYlQSL"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full text-center mt-1">AeroTech Ultra</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₹11,999</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">tv_displays</span>
+<!-- Item 2: Aluminum Stand -->
+<div class="flex flex-col items-center w-24 flex-shrink-0">
+<div class="w-20 h-20 rounded-xl bg-surface-container-lowest p-2 shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Sleek anodized dark gray aluminum headphone desktop stand on modern minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQwgsBpWSvAIGjFLJWwBwGXKxRBuw2lZsEewSEQtL7-IkIQAWSzMug6J5-di6CGb2h1mtv6URiH4xz0AMPDCHJPKhoQvm1JbIFV48mAhOrPnz4uXsl46UURhU3_dgwiWajRZCCIFK4Oqf1mTpYT_nlDIQUCkoX9CgsqUUN80EB5e18pjvqX99J2cREgV2xyvUkrBQpA1EUGK0ij093wlX2-NtBkgDgEJ7GaQPiA2_B5vx1FUazJgSu"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full text-center mt-1">Armor Desk Stand</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₹1,499</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">tv_displays</span>
+<!-- Item 3: Hard Travel Pouch -->
+<div class="flex flex-col items-center w-24 flex-shrink-0">
+<div class="w-20 h-20 rounded-xl bg-surface-container-lowest p-2 shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="Heavy-duty waterproof cable and adapter organizer pouch for audiophile accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEth8OjU65QknaNwjf_lY6x1C99n4Lkb7bU4vdjEgLP_-k-3qWqJqqdv5XuBm_eBdGqMp1tVeu2KOyBAVeh5_9LgmHub3dv6ZYPqdbRMyCgogPjI84pFfKOovkkd1Y14dTFyn_WGYD6sr9j91MQRGKizt1WjfARAx0pKCqrhe1nKlsV-M-2F-yUE9P-VBGahoUjK6SFPSBJYmNCGpETcFsecclzAh-1zr7kMZCGVTZw8Sp5OkAGOc"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate w-full text-center mt-1">Cable Organizer</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₹799</span>
+</div>
+</div>
+<!-- Bundle Total and CTA -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Combined 3 Items:</p>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹12,998</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹14,297</span>
+</div>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md font-semibold active:scale-95 transition-all shadow-sm flex items-center gap-1.5" id="bundle-add-btn" onclick="addBundleToBag()">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+          Add 3 to Cart
+        </button>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Quick Conversion Bar -->
+<aside class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-2xl px-margin py-3 shadow-[0_-4px_24px_rgba(0,0,0,0.06)]">
+<div class="flex items-center gap-space-sm max-w-lg mx-auto">
+<!-- Quantity Stepper Pill -->
+<div class="h-12 bg-surface-container rounded-full flex items-center px-1 shadow-inner flex-shrink-0">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface active:scale-90 transition-transform" onclick="changeQty(-1)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold text-on-surface w-6 text-center" id="quantity-display">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface active:scale-90 transition-transform" onclick="changeQty(1)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Add To Cart (Secondary Tactile Button) -->
+<button class="flex-1 h-12 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold active:scale-95 transition-all shadow-sm flex items-center justify-center gap-1.5 truncate" id="add-to-cart-btn" onclick="handleAddToCart()">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+<!-- Buy Now (Primary Conversion CTA) -->
+<button class="flex-1 h-12 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold active:scale-95 transition-all shadow-md flex items-center justify-center gap-1.5 truncate" onclick="handleBuyNow()">
+<span>Buy Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+<!-- Inline Interactive Logic -->
+<script>
+  let currentQuantity = 1;
+  let currentSlide = 0;
+  let isWishlisted = false;
+  let selectedEditionType = 'standard';
+  const basePrice = 11999;
+  const dacPrice = 13998;
+
+  // Carousel Navigation
+  function goToSlide(index) {
+    const track = document.getElementById('carousel-track');
+    const dots = document.querySelectorAll('.carousel-dot');
+    if (!track) return;
+    
+    currentSlide = index;
+    const slideWidth = track.clientWidth;
+    track.scrollTo({ left: slideWidth * index, behavior: 'smooth' });
+
+    dots.forEach((dot, idx) => {
+      if (idx === index) {
+        dot.className = 'carousel-dot w-6 h-1.5 rounded-full bg-primary transition-all duration-300';
+      } else {
+        dot.className = 'carousel-dot w-2 h-1.5 rounded-full bg-outline-variant transition-all duration-300';
+      }
+    });
+  }
+
+  // Wishlist Toggle with Delight Micro-animation
+  function toggleWishlist() {
+    isWishlisted = !isWishlisted;
+    const icon = document.getElementById('wishlist-icon');
+    if (!icon) return;
+    if (isWishlisted) {
+      icon.innerText = 'favorite';
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.className = 'material-symbols-outlined text-[20px] text-error transition-colors';
+    } else {
+      icon.innerText = 'favorite_border';
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.className = 'material-symbols-outlined text-[20px] text-on-surface transition-colors';
+    }
+  }
+
+  // Color Selection
+  function selectColor(btn, colorName) {
+    document.getElementById('selected-color-label').innerText = colorName;
+    document.querySelectorAll('.color-swatch').forEach(sw => {
+      sw.classList.remove('bg-surface-container-highest');
+      sw.classList.add('bg-surface-container');
+    });
+    btn.classList.remove('bg-surface-container');
+    btn.classList.add('bg-surface-container-highest');
+  }
+
+  // Edition Switching
+  function selectEdition(type) {
+    selectedEditionType = type;
+    const stdCard = document.getElementById('edition-standard');
+    const dacCard = document.getElementById('edition-dac');
+    const mainPrice = document.getElementById('main-price');
+    const slashedPrice = document.getElementById('slashed-price');
+
+    if (type === 'standard') {
+      stdCard.classList.replace('bg-surface-container', 'bg-surface-container-highest');
+      stdCard.classList.remove('opacity-80');
+      stdCard.querySelector('.checkmark-icon').innerText = 'check_circle';
+      stdCard.querySelector('.checkmark-icon').className = 'material-symbols-outlined text-[18px] text-primary checkmark-icon';
+
+      dacCard.classList.replace('bg-surface-container-highest', 'bg-surface-container');
+      dacCard.classList.add('opacity-80');
+      dacCard.querySelector('.checkmark-icon').innerText = 'radio_button_unchecked';
+      dacCard.querySelector('.checkmark-icon').className = 'material-symbols-outlined text-[18px] text-outline checkmark-icon';
+
+      mainPrice.innerText = '₹11,999';
+      slashedPrice.innerText = '₹15,999';
+    } else {
+      dacCard.classList.replace('bg-surface-container', 'bg-surface-container-highest');
+      dacCard.classList.remove('opacity-80');
+      dacCard.querySelector('.checkmark-icon').innerText = 'check_circle';
+      dacCard.querySelector('.checkmark-icon').className = 'material-symbols-outlined text-[18px] text-primary checkmark-icon';
+
+      stdCard.classList.replace('bg-surface-container-highest', 'bg-surface-container');
+      stdCard.classList.add('opacity-80');
+      stdCard.querySelector('.checkmark-icon').innerText = 'radio_button_unchecked';
+      stdCard.querySelector('.checkmark-icon').className = 'material-symbols-outlined text-[18px] text-outline checkmark-icon';
+
+      mainPrice.innerText = '₹13,998';
+      slashedPrice.innerText = '₹17,999';
+    }
+  }
+
+  // Pincode Verification Simulation
+  function checkPincode() {
+    const input = document.getElementById('pincode-input');
+    const resultBox = document.getElementById('pincode-result');
+    const val = input.value.trim();
+
+    if (val.length === 6 && !isNaN(val)) {
+      resultBox.innerHTML = `
+        <span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+        <div class="min-w-0 flex-1">
+          <p class="font-body-sm text-body-sm text-on-surface truncate">Delivering to <strong class="font-semibold text-primary">${val}</strong></p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Arrives by <strong class="text-on-surface font-bold">Tomorrow, 2:00 PM</strong> • Free Express Delivery</p>
+        </div>`;
+    } else {
+      resultBox.innerHTML = `
+        <span class="material-symbols-outlined text-[18px] text-error">info</span>
+        <div class="min-w-0 flex-1">
+          <p class="font-body-sm text-body-sm text-error font-medium">Please enter a valid 6-digit postal code.</p>
+        </div>`;
+    }
+  }
+
+  // Accordion Toggle
+  function toggleAccordion(id) {
+    const content = document.getElementById(id + '-content');
+    const icon = document.getElementById(id + '-icon');
+    if (!content || !icon) return;
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Stepper Handler
+  function changeQty(delta) {
+    currentQuantity = Math.max(1, Math.min(10, currentQuantity + delta));
+    document.getElementById('quantity-display').innerText = currentQuantity;
+  }
+
+  // Add to Bag Micro-feedback
+  function handleAddToCart() {
+    const btn = document.getElementById('add-to-cart-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-primary">done</span><span class="text-primary font-bold">Added (${currentQuantity})</span>`;
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 1800);
+  }
+
+  function handleBuyNow() {
+    const price = selectedEditionType === 'standard' ? basePrice * currentQuantity : dacPrice * currentQuantity;
+    alert(`Proceeding to checkout with ${currentQuantity} item(s) • Total: ₹${price.toLocaleString('en-IN')}`);
+  }
+
+  function addBundleToBag() {
+    const btn = document.getElementById('bundle-add-btn');
+    btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">check</span> Bundle Added`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span> Add 3 to Cart`;
+    }, 1800);
+  }
+</script></main></body></html>

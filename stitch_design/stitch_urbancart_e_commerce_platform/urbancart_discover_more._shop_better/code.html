@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#2f3038", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c4ff", "surface-container-low": "#f4f2fd", "on-tertiary-container": "#dee3ff", "tertiary-fixed-dim": "#b4c5ff", "surface": "#fbf8ff", "surface-container": "#eeedf7", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#003ea8", "outline": "#737688", "secondary": "#5f5e5e", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-secondary-fixed-variant": "#474646", "surface-container-high": "#e8e7f1", "secondary-container": "#e5e2e1", "secondary-fixed": "#e5e2e1", "inverse-on-surface": "#f1effa", "outline-variant": "#c3c5d9", "inverse-primary": "#b7c4ff", "primary-container": "#0052ff", "surface-dim": "#dad9e3", "on-secondary-container": "#656464", "on-background": "#1a1b22", "on-primary-container": "#dfe3ff", "on-primary-fixed": "#001452", "background": "#fbf8ff", "primary": "#003ec7", "on-surface-variant": "#434656", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed": "#1c1b1b", "on-primary": "#ffffff", "tertiary-container": "#165be3", "tertiary-fixed": "#dbe1ff", "tertiary": "#0044b7", "on-surface": "#1a1b22", "primary-fixed": "#dde1ff", "on-error": "#ffffff", "on-tertiary-fixed": "#00174b", "on-primary-fixed-variant": "#0038b6", "surface-tint": "#004ced", "surface-container-highest": "#e3e1ec", "surface-variant": "#e3e1ec", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#c8c6c5" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, fontFamily: { "label-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "price-md": ["Inter"], "body-md": ["Inter"], "display-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "price-lg": ["Inter"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "price-lg": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-on-background px-margin py-1 text-center overflow-hidden flex items-center justify-center"><p class="font-label-sm text-label-sm text-surface uppercase tracking-wider truncate">⚡ FREE EXPRESS SHIPPING ACROSS INDIA ON ORDERS OVER ₹1,999 • USE CODE URBAN10</p></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="UrbanCart Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XND7AS3rpwq6aOH9icdOJMYgj7ZKP4aTOj8iuvmGG6Op0LMWyQXBJXBKC_oXDXJx1hHU28EDu_seY8gBUe7O_Fj4BCBWHpdXOnrlBK14zwINY80Ds7Hl9TPCpu3otZh7a1uFGOn28MQGwA2ZZ22xJ-Cryrr13Wz7xozTIcPnsl3AULMmqaynDFMNGZtOMgdJrSwXTA5byff7xjDal5pEO3ABCzq0U8_gPQs4ZF7FnyPAQhv5uwlcYqgQ"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">UrbanCart</span><span class="font-label-sm text-label-sm text-outline hidden">Home</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Wishlist" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 min-w-[14px] h-[14px] px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">3</span></a><a aria-label="Shopping Cart" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[14px] h-[14px] px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">2</span></a><a aria-label="Account" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFw0Hcn0BTxjaa_zKHHMxZjp92bpiqstkmiJebzlsnPWMk5J8EeDIk0IwAEyq5m0hdZRoLpyX_rNG7TKZEL_JmAyqQgjgv959nhER6gN0SoOBeeAdYmNlkZVVNtr3M9mUUzIcFNVTyMZfIi3jWIAeyFruMnKesYtCiTdNNaQvkww-ZoNrO-Ee6lWhl7O7kxICU1xXvkFgeFgh9ORTVSLVGoZbNmOYAxZhtt5nrPoJ-O5pms6f2o9_L"/></a></div></div></header><main class="w-full min-h-screen bg-surface pt-24 pb-24"><div class="flex flex-col w-full">
+<!-- Search & Trending Query Chips Bar -->
+<section class="px-margin pt-space-xs pb-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-sm rounded-full shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline w-full focus:outline-none" id="main-search-input" placeholder="Search curated brands, tech, living..." type="text"/>
+<button aria-label="Voice Search" class="text-outline hover:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Quick Exploration Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5" id="search-chip-carousel">
+<button class="search-chip shrink-0 bg-primary-container text-on-primary px-space-md py-1 rounded-full font-label-md text-label-md transition-all active:scale-95 shadow-sm" data-term="Oversized Tees">
+        Oversized Tees
+      </button>
+<button class="search-chip shrink-0 bg-surface-container-low text-on-surface px-space-md py-1 rounded-full font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-high" data-term="Noise Cancelling">
+        Noise Cancelling
+      </button>
+<button class="search-chip shrink-0 bg-surface-container-low text-on-surface px-space-md py-1 rounded-full font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-high" data-term="Mechanical Keyboards">
+        Mechanical Keyboards
+      </button>
+<button class="search-chip shrink-0 bg-surface-container-low text-on-surface px-space-md py-1 rounded-full font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-container-high" data-term="Ceramic Vases">
+        Ceramic Vases
+      </button>
+</div>
+</section>
+<!-- Editorial Campaign Hero Card -->
+<section class="px-margin my-space-xs">
+<div class="relative w-full rounded-xl overflow-hidden shadow-lg aspect-[4/5] max-h-[460px] flex flex-col justify-end p-margin text-on-surface">
+<div class="absolute inset-0 bg-cover bg-center -z-10" data-alt="High-end editorial fashion photography of model dressed in structured charcoal cashmere coat standing before modernist brutalist concrete museum facade with diffused Scandinavian morning light and sharp architectural shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCI_hXuqgEgMGarNbPSqFzs8g_rdBZRNCUgg2HBV6tUI1jOvn8boOT5AmqBMD3yLEC50Tsm5sy52MD5hLlClr2n7TKoVcPcS9rFLAHWyn5uVmXbm5wV5WQrGFBS4jMU_hLltJXFj3BQ2J6ly-_72YFYLFkFR2Jrq2djJ-2M7D1vp11qzqnTtJdncxcDnmtd8GE_w9zGKfnfNcwWujKfQIzZeqAI5h5EktY3sY_kNuidkEc8KVjVdfay')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/40 to-transparent -z-10"></div>
+<!-- Limited-time badge -->
+<div class="absolute top-margin left-margin">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-space-md py-1 rounded-full uppercase tracking-wider shadow-md">
+          UP TO 40% OFF
+        </span>
+</div>
+<!-- Campaign Copy -->
+<div class="flex flex-col gap-space-xs text-surface">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest">Autumn/Winter '24</span>
+<h2 class="font-display-mobile text-display-mobile leading-none tracking-tight">AUTUMN/WINTER<br/>ESSENTIALS</h2>
+<p class="font-body-md text-body-md text-surface/90 line-clamp-2 max-w-[280px]">Elevated silhouettes engineered for contemporary metropolitan living.</p>
+<div class="pt-space-sm flex items-center gap-space-md">
+<button class="bg-surface text-on-background px-space-lg py-space-sm rounded-full font-label-md text-label-md font-semibold tracking-wide hover:bg-surface-bright transition-all shadow-md active:scale-95 flex items-center gap-space-xs">
+            Shop Collection
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-surface/80">Limited Drop</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Quick-Access Horizontal Scroll -->
+<section class="mt-space-lg px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Explore Curations</h3>
+<span class="font-label-md text-label-md text-primary font-medium cursor-pointer">View All</span>
+</div>
+<div class="flex gap-space-md overflow-x-auto no-scrollbar py-space-xs" id="category-selector">
+<!-- Item 1: Fashion -->
+<button class="category-item flex flex-col items-center gap-space-xs shrink-0 group focus:outline-none" data-category="fashion">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container shadow-sm p-0.5 transition-transform group-hover:scale-105 active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Monochrome minimalist apparel flat-lay featuring neatly folded oversized black t-shirt and charcoal trousers on polished travertine surface with soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6asaJQVWD701FdiLOxtbY6sY0KjBiwUcs0cPv-zRzXjNRm7vpFcICd-LjnPiPDFSnjzbVx7irRAWZ78PrEHvVn6eOFvsUCcXBVs6Y1ocnD8H-FRpt7fasFVlvfSfKDaksz5wbtVONsmtrGhH0STzbcivR3r4NW1pJkF-SU2l4Z0RnYT1pdpYfDq6OHH9bYZ8PgqvTVqJu0NwVqPcE4waSrrpLVFDXnjitU6X81HVQ-i3cpoAcdDkL"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center">Fashion</span>
+</button>
+<!-- Item 2: Audio & Tech -->
+<button class="category-item flex flex-col items-center gap-space-xs shrink-0 group focus:outline-none" data-category="electronics">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container shadow-sm p-0.5 transition-transform group-hover:scale-105 active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Minimal matte black studio headphones resting on brushed steel and dark oak audio desk with warm low-key accent lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi_80rHQa2tQBMj-IETPw2cZRcdBXumvrR6Z8vewFdEUIM76rn9vBOalKtfYrqiKvuvJCq4UFAWIVobCRnd2HB7cRl62RCufJ_LCXfXD6EmGwtryNlGCV389F-FJ2Icwc8wv3Hv9mWhQbkg-ta29vHs4kk0uLon2XAlQdbBwEUmavMb5MQxhWKgXcWaPbElP1vMe91RGCLMwxpL9bldfUiyNcDxQrd6fN6DEhQ0NzblA-cRBmzXOx5"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center">Electronics</span>
+</button>
+<!-- Item 3: Footwear -->
+<button class="category-item flex flex-col items-center gap-space-xs shrink-0 group focus:outline-none" data-category="footwear">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container shadow-sm p-0.5 transition-transform group-hover:scale-105 active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Architectural luxury white and dove-grey sneaker floating above pale grey pedestal with subtle architectural drop shadows and crisp profile lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwseEGebe7yCU_bloilr6pwVopQq4P8Iad_mzZyeFBHo2baUMwoXgjDeRhYtDIEMBz7M-DD93u2SZH_GmONrLzi9EHQZz72Lf0YV45CQ1CT6vsa6_e2YUIJsbU5HrmBtaNyTHdM74TI21wVg45vSC38XFv9qVaOy34jce3SWXn5aMudaYlSY3z7WI3ezbOxUKOl70tntPQgLhYjKMPTrAliajEYs7nmryI6bN2JZY2TZYldoe_zwrI"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center">Footwear</span>
+</button>
+<!-- Item 4: Accessories -->
+<button class="category-item flex flex-col items-center gap-space-xs shrink-0 group focus:outline-none" data-category="accessories">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container shadow-sm p-0.5 transition-transform group-hover:scale-105 active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Full-grain black leather tote bag with minimal silver hardware placed on raw limestone block with gentle ambient fill." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADMI49p-ussWl6jBnoo7IFqdHzeq-e8I4EcfAmbkxc7I39UBYw_v-FoDUyi8eTdY1XZ1zonzwX_WllL1DtaFHSsmWLgJ5ppk-m7P5YDWp6rM1KjCf3GPynbs-Rv3Hbs0_4McKb5J7-4zUsofCzmBRoVTGFzl6xyYLddKbFAI2sR9BlOITS42ICkYK9k6YhZg4Ax2Cv2gfQr_STCkhF7R-yyAcID6wxSkXd7gPs40ibLOkxHPgHKoXo"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center">Accessories</span>
+</button>
+<!-- Item 5: Living -->
+<button class="category-item flex flex-col items-center gap-space-xs shrink-0 group focus:outline-none" data-category="living">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container shadow-sm p-0.5 transition-transform group-hover:scale-105 active:scale-95">
+<img class="w-full h-full object-cover rounded-full" data-alt="Modern sculptural stoneware ceramic vase holding single dried botanical branch on minimalist plaster side table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEbE7ibvJjJJloskSnXbrODivCFE4Mr9s4AyQHRjOUnE6_6OtzrIesaoB-GLFwPgcNjHclEh0YHpYWGO5elc53o9BbO7PMOKXjykVWzYK9lbsqSDXtyqGWwLFZc9p2fmqe_cBjzcg82JRcPrVtPV74C_whuUygML_RcDmzadEV85pEniM5hFoLqgF6_3ds2ApB8Cg49CPvActsFw2BRBJx5jKsHwR9T6nkapc_XwPFTUdZN7WMlc9L"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center">Home</span>
+</button>
+</div>
+</section>
+<!-- Flash Deal Timer Ribbon -->
+<section class="mx-margin mt-space-lg">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-md shadow-md flex items-center justify-between overflow-hidden relative">
+<div class="flex flex-col gap-0.5 z-10">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-error">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-surface-container-high tracking-widest uppercase">Midnight Drop</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-inverse-on-surface">Flash Archive Sale</span>
+</div>
+<!-- Live Count Down Blocks -->
+<div class="flex items-center gap-1 z-10">
+<div class="flex flex-col items-center bg-surface-container-low/10 px-2 py-1 rounded">
+<span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface" id="timer-hours">04</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-outline-variant">HRS</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface">:</span>
+<div class="flex flex-col items-center bg-surface-container-low/10 px-2 py-1 rounded">
+<span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface" id="timer-mins">23</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-outline-variant">MIN</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-inverse-on-surface">:</span>
+<div class="flex flex-col items-center bg-surface-container-low/10 px-2 py-1 rounded">
+<span class="font-headline-sm text-headline-sm font-bold text-primary-fixed-dim" id="timer-secs">12</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-outline-variant">SEC</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Trending Now (Horizontal Product Scroller) -->
+<section class="mt-space-xl flex flex-col gap-space-sm">
+<div class="px-margin flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Trending Now</h3>
+<p class="font-body-sm text-body-sm text-outline">Handpicked pieces in high demand this week</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-medium">See 48+</span>
+</div>
+<!-- Scroller -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar px-margin py-space-xs">
+<!-- Product Card 1 -->
+<div class="w-[200px] shrink-0 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden group">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Heavyweight luxury organic cotton oversized boxy t-shirt in washed obsidian black floating on clean studio ivory background with soft shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfv-OzmsuXpu8HdL6goqp3IkOsiORk6LpXbgNUuf92Va9lIjjh58isKd8bF25pUr0-UzNkWNqg6hlSjOn09UoMiiZbyj9XPHE3acHCm_ZEuszUSqW4U4pkFDC7EiccPqYAnRlAREDGdX9d3ARijaBvK3JOBByQBkGvSTeQUUEw2eUio2PxvsrCE5CJ-cnRFR9tF1Vw6UwtPmfmcZbop6iEwwqFKYBS_1_6wVSxxLuht5szBUvQE8dI"/>
+<span class="absolute top-2 left-2 bg-on-background text-surface font-label-sm text-[10px] px-2 py-0.5 rounded-full">40% OFF</span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.8</span>
+<span class="font-body-sm text-[11px] text-outline">(184)</span>
+</div>
+<h4 class="font-headline-sm text-[14px] text-on-surface truncate">Raw Boxy Heavyweight Tee</h4>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-price-md text-price-md text-on-surface font-bold">₹2,499</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹4,199</span>
+</div>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1 active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Bag
+          </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="w-[200px] shrink-0 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden group">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="High fidelity anodized aluminum over-ear wireless noise cancelling headphones in matte space grey on concrete studio pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1wo9vStUFyecVWvHf-9eMJQsGqvRAmKb2-xoWQznh7d0dQFehDFGI3r4VYp6nbX4eiGERIYvGm9ZMh-9RExA3Ka7JigzVnWw7HYoaGehzmaHvhTvzpYwjFRnNUvmwQqk8M494RkqYEPbtTEzaosr6B7_OZ5FS-j2i5H_QpiCjLRvf5lxHGen0QU7qm8x-d2SDPObQFxVBHEdcIC6HpoXnPzaD30Tiej7Ip_8Q_FWdsMYeaPaEP4HG"/>
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full">POPULAR</span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.9</span>
+<span class="font-body-sm text-[11px] text-outline">(342)</span>
+</div>
+<h4 class="font-headline-sm text-[14px] text-on-surface truncate">Aura Acoustic Studio ANC</h4>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-price-md text-price-md text-on-surface font-bold">₹11,999</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹15,499</span>
+</div>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1 active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Bag
+          </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="w-[200px] shrink-0 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden group">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Minimalist automatic mechanical watch with sapphire glass matte dial and fine Italian tanned leather strap on grey slate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDTNckQCqo1L7ic-Dfm9Dcg4p_Cq9loxnkuda0ivqRVuKxHuUnGtAS2-G0lDfwo4aKVmf1hOMvB4lgGwAVrQaBwt81WXSXRGnAjLccFYoqiIfozW_q4VEQtPZ64EZRlaqrZXHxZBa5J2sR3t465BsPE7pCR_AS4F38MAtyDRErLfamghZgQ-ZqtTgLwXlFw-Aa3gtBS1Q0s0H6sajB_LS9jxWNMv7TCQ-FBGL5degIMtAOBofku4Tw"/>
+<span class="absolute top-2 left-2 bg-on-background text-surface font-label-sm text-[10px] px-2 py-0.5 rounded-full">30% OFF</span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.7</span>
+<span class="font-body-sm text-[11px] text-outline">(92)</span>
+</div>
+<h4 class="font-headline-sm text-[14px] text-on-surface truncate">Mono Minimalist Chrono</h4>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-price-md text-price-md text-on-surface font-bold">₹4,999</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹7,200</span>
+</div>
+<button class="quick-add-btn mt-space-xs w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1 active:scale-95">
+<span class="material-symbols-outlined text-[16px]">add</span> Add to Bag
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Lookbook Feature -->
+<section class="px-margin mt-space-xl">
+<div class="bg-surface-container-high rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full h-52">
+<img class="w-full h-full object-cover" data-alt="High fashion architectural lookbook featuring model wearing oversized textured camel wool coat posing beside brutalist polished concrete column under soft diffused skylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHSvZT4Fm_JJ2tHd2YBE5hTzBpZjbaGK11c-kk7H_L1XUoyyOt7ur_ecNXdKUda2d4IOVc0dBxGGrJ8CaE37_Bap7Mg2t-XzWs6ZYMnfAusNzCkUdZ7u1Zz-2ALMrfV4NEX9l_aKT-LERkPi8DDa-AnOQT9pBwd2zwpJfdAfQYN31j6M-TrDAIumqYpNRZFMzOg07yqRaMR4ce6tVDAaHN-sJT9-LTGLmKeOrMAmK4rQVK6InhIbHu"/>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-md py-1 rounded-full">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Volume IV • Issue 02</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Editorial Lookbook</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Modern Monoliths: Architectural Tailoring</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A deliberate exploration into structural wools, relaxed drop-shoulders, and resilient natural fabrics made for fluid daily transit.</p>
+<div class="pt-space-xs">
+<button class="bg-on-background text-surface px-space-lg py-2 rounded-full font-label-md text-label-md font-medium hover:bg-inverse-surface transition-all active:scale-95">
+            Read Editorial Story
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bestsellers Responsive 2-Column Grid -->
+<section class="px-margin mt-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bestselling Pieces</h3>
+<p class="font-body-sm text-body-sm text-outline">Verified everyday favorites across India</p>
+</div>
+<span class="font-label-md text-label-md text-primary font-medium">Filter</span>
+</div>
+<div class="grid grid-cols-2 gap-gutter-sm">
+<!-- Grid Item 1 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Luxury charcoal Merino wool knit crewneck sweater laid flat against natural textured linen with delicate soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGxc0b6iszb_rE6F0VYE0EGj7tNpTgZuPC--Hgf0X7B2VOClbbMmGN9AO9_7X5zB6m2nMFcJh5Rsz0yp-gIyS7aO01mvZ-LzRmaTBFlOmb--Vl4USwlzfc5FHWQHxQHECj1tkCL8x0_rTn8vzJk-EhpDP3aC9m12m69gMhlg5dfM2z2dJDrdEaUxBh1JcjXsjEgNQoK6SzQaZwu1qoFiYgY1XHT9Tjmyb5wf4fzJHr_zVgNWTse0Dn"/>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Knitwear</span>
+<h4 class="font-headline-sm text-[13px] text-on-surface truncate">Merino Wool Knit Crew</h4>
+<span class="font-price-md text-[15px] text-on-surface font-bold mt-0.5">₹3,299</span>
+<button class="quick-add-btn mt-2 w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-[11px] transition-colors flex items-center justify-center gap-1 active:scale-95">
+            Add to Bag
+          </button>
+</div>
+</div>
+<!-- Grid Item 2 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Pair of artisanal Japanese matte ceramic coffee mugs in warm volcanic white and basalt grey on natural cedar serving tray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoqCv9A1pBNefY6ywuAx8Q_qLWIrmhbdZ_JXnXAjap_2K1GQaHcrMBVyjvhDMfVtVSHjE9IXxrAtfa2ksbl-ZhlbwrUzZjehGPM1Yb6Yx1IFGDHhoYUiLJBO4aEtOlKm7fJFPOYJm08bn-BRD89AaysgWkz4GUC__kLXhBWWcaoKeKoDs4eUH_Wmgm76vTvwPqoYz1k6_UugcySgw7Zova-WHeoHgoCGfg1tPFLPV383j9hd6CRZk2"/>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Living</span>
+<h4 class="font-headline-sm text-[13px] text-on-surface truncate">Matte Ceramic Mug Duo</h4>
+<span class="font-price-md text-[15px] text-on-surface font-bold mt-0.5">₹1,499</span>
+<button class="quick-add-btn mt-2 w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-[11px] transition-colors flex items-center justify-center gap-1 active:scale-95">
+            Add to Bag
+          </button>
+</div>
+</div>
+<!-- Grid Item 3 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist custom mechanical keyboard with low profile PBT keycaps and sandblasted anodized aluminum housing illuminated with ambient warm white desk glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo4BcGlhhtUQLYJlBzydkHpg-HtlJzdzzyre5zG3n0Zat5r33uMjAOx39ai5tsCpOr8gaHfG8ihjlZRZ-UcCEXehgUi4Tp78bjjfCcZeZwN5t4tHu5yCRiuT288584sBRu4Dra5pA_bTgVUbrNLrxWBlkjrCFKlp0OrjC_meGGCRWVg2nWZyW1OQ2Sxb4IjTSU9jJSnfUTMsIllhJ-G9JkqFT8ceXqwBhKYCCWgQrZ_wI2ayS3eUrb"/>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Workspace</span>
+<h4 class="font-headline-sm text-[13px] text-on-surface truncate">Apex 75 Mechanical Desk</h4>
+<span class="font-price-md text-[15px] text-on-surface font-bold mt-0.5">₹8,499</span>
+<button class="quick-add-btn mt-2 w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-[11px] transition-colors flex items-center justify-center gap-1 active:scale-95">
+            Add to Bag
+          </button>
+</div>
+</div>
+<!-- Grid Item 4 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Structured vegetable-tanned full-grain leather sling bag in saddle tan with matte black alloy buckle on architectural marble bench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAggnHG186zPqYVoP_n1hUgwa79p8ItmN5jYnG1W10U68NKx3SLESsZMU-yN4zzFjGyqfA5JdkVG4UycyEB_bE9KOcB4BZOlddQqflIkqyqrzcbP1RGq7ubdpALikvBvItRxKfrk-8AmiihSocThJPdJiu7TpTMUbcmrHAxGBOZ-MuLGelt_tUeBeGWkXpgwO5OYCk0tOWvbDaAvls17oambwZ5s2-BURgxKcPTBB3985m5OU932tB7"/>
+<button class="wishlist-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">favorite_border</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Carry</span>
+<h4 class="font-headline-sm text-[13px] text-on-surface truncate">Transit Crossbody Bag</h4>
+<span class="font-price-md text-[15px] text-on-surface font-bold mt-0.5">₹3,850</span>
+<button class="quick-add-btn mt-2 w-full py-1.5 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-sm text-[11px] transition-colors flex items-center justify-center gap-1 active:scale-95">
+            Add to Bag
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Verified Customer Reviews Section -->
+<section class="mt-space-xl px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Community Voices</h3>
+<p class="font-body-sm text-body-sm text-outline">Real reviews from verified patrons</p>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface active:scale-90 transition-transform" id="review-prev">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface active:scale-90 transition-transform" id="review-next">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Review Slider Container -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar scroll-smooth" id="reviews-track">
+<!-- Review 1 -->
+<div class="min-w-[270px] max-w-[290px] shrink-0 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">"The Merino Wool knit is unbelievable. Heavy, structural, yet extremely soft. Arrived in Mumbai within 48 hours."</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Devashish Roy</span>
+<span class="font-body-sm text-[11px] text-outline">Mumbai, MH</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verified
+          </span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="min-w-[270px] max-w-[290px] shrink-0 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">"Clean packaging and pristine aesthetics. The Studio ANC headphones punch way above their price class in sound stage."</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ananya Sharma</span>
+<span class="font-body-sm text-[11px] text-outline">Bengaluru, KA</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verified
+          </span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="min-w-[270px] max-w-[290px] shrink-0 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">"Finding true heavy cotton tees in India was a nightmare until UrbanCart. Seamless return policy as well."</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kabir Mehta</span>
+<span class="font-body-sm text-[11px] text-outline">New Delhi, DL</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verified
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- VIP Club Incentive Card -->
+<section class="px-margin mt-space-xl">
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">UrbanCart Collective</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary leading-tight">Get ₹500 off your first ritual order</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-[280px]">Join 45,000+ members receiving private archive access, secret drops, and tailored curations.</p>
+<div class="mt-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center bg-surface rounded-full p-1 pl-space-md shadow-sm">
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="vip-email" placeholder="Enter your email address" type="email"/>
+<button class="bg-on-background text-surface px-space-md py-2 rounded-full font-label-sm text-label-sm font-semibold tracking-wide shrink-0 transition-transform active:scale-95" id="vip-submit-btn">
+            Join Now
+          </button>
+</div>
+<span class="font-label-sm text-[10px] text-primary-fixed hidden" id="vip-feedback">✨ Welcome to the Collective. Your code URBAN500 has been sent!</span>
+</div>
+</div>
+</section>
+<!-- Trust & Assurance Pillars -->
+<section class="mt-space-xl px-margin">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">100% Genuine</span>
+<span class="font-body-sm text-[11px] text-outline">Direct brand provenance</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">7-Day Returns</span>
+<span class="font-body-sm text-[11px] text-outline">Doorstep hassle-free pickup</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Store Footer & Payment Seals -->
+<footer class="mt-space-xl pt-space-lg pb-space-xl px-margin bg-surface-container-low flex flex-col gap-space-lg text-on-surface">
+<!-- Brand Statement -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">UrbanCart India</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[320px]">Engineered for discerning modern lifestyles. Curated goods with verified provenance and rapid pan-India fulfillment.</p>
+</div>
+<!-- Quick Navigation Links -->
+<div class="grid grid-cols-2 gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Curations</span>
+<a class="hover:text-primary transition-colors" href="#">Autumn Drops</a>
+<a class="hover:text-primary transition-colors" href="#">Monochrome Studio</a>
+<a class="hover:text-primary transition-colors" href="#">Audio Flagships</a>
+<a class="hover:text-primary transition-colors" href="#">Workspace Haven</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Concierge</span>
+<a class="hover:text-primary transition-colors" href="#">Track Shipment</a>
+<a class="hover:text-primary transition-colors" href="#">Express Delivery Info</a>
+<a class="hover:text-primary transition-colors" href="#">Authentication Guarantee</a>
+<a class="hover:text-primary transition-colors" href="#">Customer Care 24/7</a>
+</div>
+</div>
+<!-- Payment Badges Pill Row -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Secure Payment Gateways</span>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-surface rounded text-on-surface font-label-sm text-[11px] shadow-sm font-semibold">UPI</span>
+<span class="px-space-sm py-1 bg-surface rounded text-on-surface font-label-sm text-[11px] shadow-sm font-semibold">RuPay</span>
+<span class="px-space-sm py-1 bg-surface rounded text-on-surface font-label-sm text-[11px] shadow-sm font-semibold">Visa</span>
+<span class="px-space-sm py-1 bg-surface rounded text-on-surface font-label-sm text-[11px] shadow-sm font-semibold">Mastercard</span>
+<span class="px-space-sm py-1 bg-surface rounded text-on-surface font-label-sm text-[11px] shadow-sm font-semibold">NetBanking</span>
+</div>
+</div>
+<!-- Copyright & Disclaimer -->
+<div class="pt-space-xs flex flex-col gap-1 text-outline font-body-sm text-[11px]">
+<p>© 2024 UrbanCart Technologies Pvt Ltd. All rights reserved.</p>
+<p>Crafted for effortless discovery across New Delhi, Mumbai, Bengaluru and beyond.</p>
+</div>
+</footer>
+</div>
+<script>
+  (function() {
+    // Search Suggestions Chips
+    const searchInput = document.getElementById('main-search-input');
+    const chips = document.querySelectorAll('.search-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary');
+          c.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface');
+        if (searchInput) {
+          searchInput.value = chip.dataset.term;
+          searchInput.focus();
+        }
+      });
+    });
+
+    // Wishlist Heart Toggles
+    const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+    wishlistBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const isFavorited = icon.textContent === 'favorite';
+          icon.textContent = isFavorited ? 'favorite_border' : 'favorite';
+          if (!isFavorited) {
+            btn.classList.add('text-error');
+            icon.style.fontVariationSettings = "'FILL' 1";
+          } else {
+            btn.classList.remove('text-error');
+            icon.style.fontVariationSettings = "'FILL' 0";
+          }
+        }
+      });
+    });
+
+    // Quick Add Button Feedback
+    const addBtns = document.querySelectorAll('.quick-add-btn');
+    addBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const origText = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Added';
+        btn.classList.remove('bg-surface-container');
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        setTimeout(() => {
+          btn.innerHTML = origText;
+          btn.classList.remove('bg-primary-container', 'text-on-primary');
+          btn.classList.add('bg-surface-container');
+        }, 1500);
+      });
+    });
+
+    // Midnight Drop Real-time Countdown Timer
+    let totalSeconds = 4 * 3600 + 23 * 60 + 12;
+    const hoursEl = document.getElementById('timer-hours');
+    const minsEl = document.getElementById('timer-mins');
+    const secsEl = document.getElementById('timer-secs');
+
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const h = Math.floor(totalSeconds / 3600);
+        const m = Math.floor((totalSeconds % 3600) / 60);
+        const s = totalSeconds % 60;
+        if (hoursEl) hoursEl.textContent = String(h).padStart(2, '0');
+        if (minsEl) minsEl.textContent = String(m).padStart(2, '0');
+        if (secsEl) secsEl.textContent = String(s).padStart(2, '0');
+      }
+    }, 1000);
+
+    // Reviews Navigation Controls
+    const reviewsTrack = document.getElementById('reviews-track');
+    const prevBtn = document.getElementById('review-prev');
+    const nextBtn = document.getElementById('review-next');
+
+    if (prevBtn && reviewsTrack) {
+      prevBtn.addEventListener('click', () => {
+        reviewsTrack.scrollBy({ left: -280, behavior: 'smooth' });
+      });
+    }
+    if (nextBtn && reviewsTrack) {
+      nextBtn.addEventListener('click', () => {
+        reviewsTrack.scrollBy({ left: 280, behavior: 'smooth' });
+      });
+    }
+
+    // VIP Form Submission Interaction
+    const vipSubmit = document.getElementById('vip-submit-btn');
+    const vipEmail = document.getElementById('vip-email');
+    const vipFeedback = document.getElementById('vip-feedback');
+
+    if (vipSubmit && vipEmail && vipFeedback) {
+      vipSubmit.addEventListener('click', () => {
+        if (vipEmail.value.trim().length > 3) {
+          vipFeedback.classList.remove('hidden');
+          vipEmail.value = '';
+          vipSubmit.disabled = true;
+          vipSubmit.textContent = 'Joined';
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-[10px] leading-tight">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-[10px] leading-tight">Catalog</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">favorite_border</span><span class="font-label-sm text-[10px] leading-tight">Wishlist</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-2 px-1 min-w-[12px] h-[12px] rounded-full bg-primary-container text-on-primary font-label-sm text-[8px] flex items-center justify-center leading-none">2</span></div><span class="font-label-sm text-[10px] leading-tight">Cart</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="account" href="#"><span class="material-symbols-outlined text-[22px]">person_outline</span><span class="font-label-sm text-[10px] leading-tight">Account</span></a></div></nav></body></html>

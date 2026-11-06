@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#2f3038", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c4ff", "surface-container-low": "#f4f2fd", "on-tertiary-container": "#dee3ff", "tertiary-fixed-dim": "#b4c5ff", "surface": "#fbf8ff", "surface-container": "#eeedf7", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#003ea8", "outline": "#737688", "secondary": "#5f5e5e", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-secondary-fixed-variant": "#474646", "surface-container-high": "#e8e7f1", "secondary-container": "#e5e2e1", "secondary-fixed": "#e5e2e1", "inverse-on-surface": "#f1effa", "outline-variant": "#c3c5d9", "inverse-primary": "#b7c4ff", "primary-container": "#0052ff", "surface-dim": "#dad9e3", "on-secondary-container": "#656464", "on-background": "#1a1b22", "on-primary-container": "#dfe3ff", "on-primary-fixed": "#001452", "background": "#fbf8ff", "primary": "#003ec7", "on-surface-variant": "#434656", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed": "#1c1b1b", "on-primary": "#ffffff", "tertiary-container": "#165be3", "tertiary-fixed": "#dbe1ff", "tertiary": "#0044b7", "on-surface": "#1a1b22", "primary-fixed": "#dde1ff", "on-error": "#ffffff", "on-tertiary-fixed": "#00174b", "on-primary-fixed-variant": "#0038b6", "surface-tint": "#004ced", "surface-container-highest": "#e3e1ec", "surface-variant": "#e3e1ec", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#c8c6c5" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem" }, fontFamily: { "label-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "price-md": ["Inter"], "body-md": ["Inter"], "display-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "price-lg": ["Inter"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "price-lg": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-on-background px-margin py-1 text-center overflow-hidden flex items-center justify-center"><p class="font-label-sm text-label-sm text-surface uppercase tracking-wider truncate">⚡ FREE EXPRESS SHIPPING ACROSS INDIA ON ORDERS OVER ₹1,999 • USE CODE URBAN10</p></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="UrbanCart Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XND7AS3rpwq6aOH9icdOJMYgj7ZKP4aTOj8iuvmGG6Op0LMWyQXBJXBKC_oXDXJx1hHU28EDu_seY8gBUe7O_Fj4BCBWHpdXOnrlBK14zwINY80Ds7Hl9TPCpu3otZh7a1uFGOn28MQGwA2ZZ22xJ-Cryrr13Wz7xozTIcPnsl3AULMmqaynDFMNGZtOMgdJrSwXTA5byff7xjDal5pEO3ABCzq0U8_gPQs4ZF7FnyPAQhv5uwlcYqgQ"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">UrbanCart</span><span class="font-label-sm text-label-sm text-outline hidden">Catalog</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Wishlist" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 min-w-[14px] h-[14px] px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">3</span></a><a aria-label="Shopping Cart" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[14px] h-[14px] px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[9px] flex items-center justify-center leading-none">2</span></a><a aria-label="Account" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFw0Hcn0BTxjaa_zKHHMxZjp92bpiqstkmiJebzlsnPWMk5J8EeDIk0IwAEyq5m0hdZRoLpyX_rNG7TKZEL_JmAyqQgjgv959nhER6gN0SoOBeeAdYmNlkZVVNtr3M9mUUzIcFNVTyMZfIi3jWIAeyFruMnKesYtCiTdNNaQvkww-ZoNrO-Ee6lWhl7O7kxICU1xXvkFgeFgh9ORTVSLVGoZbNmOYAxZhtt5nrPoJ-O5pms6f2o9_L"/></a></div></div></header><main class="w-full min-h-screen bg-surface pt-24 pb-24"><div class="flex flex-col w-full">
+<!-- Query Feedback Context & Reset Strip -->
+<section class="px-margin pt-space-sm pb-space-xs bg-surface flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">travel_explore</span>
+<div class="flex items-baseline gap-1.5 truncate">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Premium Fashion &amp; Tech</p>
+<span class="font-label-sm text-label-sm text-outline shrink-0">148 items</span>
+</div>
+</div>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface-variant font-label-sm text-label-sm shrink-0" id="clearQueryBtn">
+<span>Clear</span>
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</section>
+<!-- Horizontal Scrollable Category Filter Pills -->
+<section class="py-space-xs bg-surface">
+<div class="flex items-center gap-space-xs px-margin overflow-x-auto no-scrollbar scroll-smooth">
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all" data-category="all">
+        All Items (148)
+      </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="fashion">
+        Fashion
+      </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="electronics">
+        Electronics
+      </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="footwear">
+        Footwear
+      </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="accessories">
+        Accessories
+      </button>
+<button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="home">
+        Home &amp; Living
+      </button>
+</div>
+</section>
+<!-- Control Strip: Filter Trigger, Sort Pill, & Grid View Toggle -->
+<section class="sticky top-16 z-30 px-margin py-space-xs bg-surface/95 backdrop-blur-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<!-- Filter Modal Trigger Button -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md active:scale-95 transition-transform" id="filterSheetTrigger">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Filters</span>
+<span class="w-4 h-4 rounded-full bg-primary-container text-on-primary text-[10px] font-bold flex items-center justify-center" id="activeFilterBadge">2</span>
+</button>
+<!-- Sort Selection Simulator -->
+<div class="relative">
+<button class="flex items-center gap-1 px-3 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" id="sortDropdownTrigger">
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+<span id="sortCurrentLabel">Featured</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<!-- Sort Floating Card Overlay -->
+<div class="hidden absolute left-0 mt-1 w-48 bg-surface-container-lowest rounded-xl shadow-xl p-1 z-40" id="sortMenu">
+<button class="sort-option w-full text-left px-3 py-2 rounded-lg font-body-sm text-body-sm text-primary font-semibold bg-surface-container-low" data-sort="Featured">Featured</button>
+<button class="sort-option w-full text-left px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container" data-sort="Price: Low to High">Price: Low to High</button>
+<button class="sort-option w-full text-left px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container" data-sort="Price: High to Low">Price: High to Low</button>
+<button class="sort-option w-full text-left px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container" data-sort="Customer Rating">Customer Rating</button>
+<button class="sort-option w-full text-left px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container" data-sort="Newest Arrivals">Newest Arrivals</button>
+</div>
+</div>
+</div>
+<!-- Layout Density Switcher -->
+<div class="flex items-center p-0.5 rounded-full bg-surface-container shrink-0">
+<button aria-label="Grid View" class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-sm transition-all" id="gridToggleBtn">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button aria-label="List View" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface transition-all" id="listToggleBtn">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+</section>
+<!-- Active Applied Filter Chips Strip -->
+<section class="px-margin py-space-xs flex flex-wrap items-center gap-1.5 bg-surface" id="appliedChipsBar">
+<div class="chip-item flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" data-chip="rating">
+<span>Rating: 4★ &amp; above</span>
+<button aria-label="Remove filter" class="remove-chip flex items-center justify-center hover:text-error">
+<span class="material-symbols-outlined text-[13px]">cancel</span>
+</button>
+</div>
+<div class="chip-item flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" data-chip="stock">
+<span>Express Shipping</span>
+<button aria-label="Remove filter" class="remove-chip flex items-center justify-center hover:text-error">
+<span class="material-symbols-outlined text-[13px]">cancel</span>
+</button>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline ml-1" id="clearAllChips">Reset All</button>
+</section>
+<!-- Dynamic Product Showcase Container (2-Column Grid vs 1-Column List Mode) -->
+<section class="px-margin py-space-sm">
+<div class="grid grid-cols-2 gap-gutter-sm" id="productGallery">
+<!-- Item 1: AeroTech ANC Headphones -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="1">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-end matte black over-ear wireless headphones resting cleanly on a minimalist concrete plinth, sharp architectural lighting with soft shadows, studio luxury aesthetic, product catalog photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSkglf5tSEKG_0IHIeCtBTUeynn93p480WIDfJhP_8nxBU7y0LLdN2TZuIeUE4qPPJaDbvcM0UUpQvQUvN8kLD4-HlJHPKZgTikqK-G_ameca-r5Qk-utvD9GLeuRfp6ta0OekLGAnWiph7PA4teGcY3xO_lUxYb5EQsiNSKoV8ErHXDHEyNppecuJd52ob-n_L6YvxZa0CpkQnG8ANuDrxJN_MXSWbbHYZm74XMg1M_5jjZS96EOS"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] tracking-wide uppercase">
+            ⚡ Fast Express
+          </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Electronics</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.9</span>
+<span class="font-body-sm text-[9px] text-outline">(420)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">AeroTech ANC Wireless Headphones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Matte Black • 45h Battery</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹11,999</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹15,999</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">25% OFF</span>
+</div>
+</div>
+</article>
+<!-- Item 2: Heavyweight Terry Hoodie -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="2">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Heavyweight french terry charcoal hoodie carefully styled on an invisible mannequin, warm editorial studio lighting, ultra-detailed fabric texture, premium minimalist lifestyle fashion photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9D0Wj7CoRS2ZF_aTi3n30ptbO6EDTsaXjivDgb5tXVMsAzprNF8mf3APaw_bbe5gTAtz8jppQUplAoBalA3EAH_VDHkHqephEo_FBfxmMn3HhYvWdHRIHWZsfH3NaZndHUKwbXK0YD2xhwDj6hua7W4YxXePIJgvEreHbcFrdxLeSlIkwqXXrlsiLXoz8lEDVTbikC266T61BR9ryVyTjvwYqzPbrY4AIXeYWa8AEB13_2lY4qHG"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-sm text-[10px] tracking-wide uppercase">
+            Curated
+          </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Apparel</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.8</span>
+<span class="font-body-sm text-[9px] text-outline">(1.2k)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">Heavyweight French Terry Hoodie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Heather Charcoal • S, M, L, XL</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹2,999</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹4,499</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">33% OFF</span>
+</div>
+</div>
+</article>
+<!-- Item 3: Minimalist Sapphire Chronograph -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="3">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Brushed stainless steel luxury minimalist chronograph watch with deep black dial and sapphire crystal face on neutral raw stone background, precision macro watch photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwNWOjnMqAlHd6eVyenNjqaNDpZ9FXDbH3kNa5lx-jDnZEH0InWo_-OW09qGW2MHGb2xf0LzCeeafGLq8JSgseTcOE9Hb8H3XvYTVKn4CegbIDlKmknnhpWW-ymBZ4jU14ZEbsuXdS5u2iT0BkaVILR9ZB5CpsVg6TOno9X7QjyCeZfWGkYgDLByq3MkoF-cYNtIjlqGstnU6mZl0ofk2wHc-ysm0Fdme5zUdPDFsqJbITuNuiEhIF"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Timepieces</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.7</span>
+<span class="font-body-sm text-[9px] text-outline">(310)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">Minimalist Sapphire Chronograph</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Silver / Black • 5 ATM Water Res.</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹6,499</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹8,999</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">28% OFF</span>
+</div>
+</div>
+</article>
+<!-- Item 4: Top-Grain Leather Cardholder -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="4">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cognac tan handcrafted top-grain leather slim cardholder with precision waxed stitching, angled against a warm light wooden background, artisan leathercraft luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Hp6IgmHLT0c-Wj2eTcPwden238clWz_PXLZxPf6ilAuIbR779iEVTT_0T8wV4BS4UBkUyXbBgBwh5_Dbrd_wZNGAxJsxJHuBYiZsGmUu0t54Rl68y3BvxZzda9vFsNUh5y9k6UNcz3xq7tKr1NWYtfk5W7B-u9Ba2LgYlgFsnZ_ZhOCjKWV7D-J5b6PahZqqMb9FdihsrZ6Nd8IPBEUJAv-h4Kb0OzlsDjzD7Evnsx-cpbzeoD3A"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] tracking-wide uppercase">
+            Best Value
+          </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Leather Goods</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.9</span>
+<span class="font-body-sm text-[9px] text-outline">(850)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">Handcrafted Top-Grain Cardholder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Cognac Tan • RFID Protected</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹1,299</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹1,999</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">35% OFF</span>
+</div>
+</div>
+</article>
+<!-- Item 5: Sculptural Ceramic Carafe -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="5">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern sculptural ceramic carafe and matching tumbler set in matte off-white textured finish, serene architectural interior setting with cast morning sunlight, Japandi home decor style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCShY_4KZzefz8-k2J354DMUsoTMXvgcA-YC_5KhPjs8V39YqBM9G2Nx6veeNpPU_69944iIw3Ca_CiUyflmJFFgduy3kEBvuoLF9HcE8SVFjykRk6X_k1mLvZYbBjvpx5ZAgMQLND_4Jh6TvUUtzDYIsaU1RcMwkwmb0emASahKJZ9b2BLVRp053rK-KV7gNWWAuhKB-NCmYI2kZLprIMGQKTyFvAkaJ_2H6OhGcKUfk2D5L2Y6MeB"/>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Living</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.6</span>
+<span class="font-body-sm text-[9px] text-outline">(142)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">Sculptural Ceramic Carafe &amp; Tumbler</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Off-White • Hand-thrown Stoneware</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹1,899</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹2,500</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">24% OFF</span>
+</div>
+</div>
+</article>
+<!-- Item 6: Monochrome Knit Runner Sneakers -->
+<article class="product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative" data-product="6">
+<div class="relative w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Triple white aerodynamic knit runner sneakers floating dynamically at a slight angle, architectural shadow beneath, breathable woven upper mesh detail, clean studio footwear editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTYghS0O_XRWnSrPZn1sY682tjMpZzu-kDeHvefp6e7PNdvlbeW6VjhCxxUL80_ZIXeNQGc-IpTrxxBqCjfW8yETfbLrUv0p4KkWVX-xnUQXlGf4rChc24hi_z9kDYW5fFwDyVViJb79cOfsTkOnqE0_U968dbNbpT3uYY8sskI_T_I08lpL8DiyEPORIFkCM12EsbHNxXIl-l7U0t-9w4itAlU_3lE6oGg2ljYknuNWP-7nOZXB73"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] tracking-wide uppercase">
+            ⚡ Fast Express
+          </span>
+<button aria-label="Save to Wishlist" class="wishlist-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+<button class="quickview-btn absolute bottom-2 inset-x-2 py-1.5 rounded-lg bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm opacity-90 hover:opacity-100 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Quick Look
+          </button>
+</div>
+<div class="pt-2 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider truncate">Footwear</span>
+<div class="flex items-center gap-0.5 shrink-0 bg-surface-container px-1.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold">4.8</span>
+<span class="font-body-sm text-[9px] text-outline">(630)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight line-clamp-2">Monochrome Knit Runner Sneakers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate">Triple White • CloudFoam Sole</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-price-md text-price-md text-on-surface">₹3,799</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹5,999</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">37% OFF</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Pagination & Progress Bar -->
+<section class="px-margin pt-space-md pb-space-lg flex flex-col items-center gap-space-sm">
+<div class="flex items-center justify-between w-full max-w-sm">
+<button class="flex items-center gap-1 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md opacity-50 cursor-not-allowed" disabled="" id="prevPageBtn">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span>Previous</span>
+</button>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="font-bold text-primary">1</span>
+<span class="text-outline">of</span>
+<span class="text-on-surface-variant">8</span>
+</div>
+<button class="flex items-center gap-1 px-4 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" id="nextPageBtn">
+<span>Next</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Visual Progress indicator -->
+<div class="w-full max-w-xs bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full w-[12.5%] rounded-full transition-all duration-300"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Showing 6 of 148 curated items</span>
+</section>
+<!-- Filter Bottom Sheet Drawer (Hidden Backdrop & Container) -->
+<div class="fixed inset-0 z-50 hidden" id="filterModal">
+<div class="absolute inset-0 bg-on-background/50 backdrop-blur-sm transition-opacity" id="filterBackdrop"></div>
+<div class="absolute inset-x-0 bottom-0 max-h-[751px] bg-surface-container-lowest rounded-t-2xl shadow-2xl flex flex-col overflow-hidden animate-slide-up">
+<!-- Sheet Handle & Header -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-2">
+<div class="w-12 h-1 bg-outline-variant rounded-full mx-auto"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Filter Catalog</h2>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface" id="closeFilterBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Filter Controls Body -->
+<div class="p-space-md overflow-y-auto space-y-space-md">
+<!-- Price Tiers -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-space-xs font-bold uppercase tracking-wider">Price Range</h4>
+<div class="grid grid-cols-3 gap-2">
+<button class="filter-choice px-2.5 py-2 rounded-xl bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-all" data-type="price" data-val="under2k">
+              Under ₹2,000
+            </button>
+<button class="filter-choice px-2.5 py-2 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm transition-all" data-type="price" data-val="2k-5k">
+              ₹2,000 - ₹5,000
+            </button>
+<button class="filter-choice px-2.5 py-2 rounded-xl bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-all" data-type="price" data-val="above5k">
+              ₹5,000+
+            </button>
+</div>
+</div>
+<!-- Rating Selection -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-space-xs font-bold uppercase tracking-wider">Customer Rating</h4>
+<div class="flex items-center gap-2">
+<button class="filter-choice flex-1 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 transition-all" data-type="rating" data-val="4plus">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.0+ Stars</span>
+</button>
+<button class="filter-choice flex-1 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-surface-container-high transition-all" data-type="rating" data-val="3plus">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>3.0+ Stars</span>
+</button>
+</div>
+</div>
+<!-- Shipping & Availability -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-space-xs font-bold uppercase tracking-wider">Availability &amp; Perks</h4>
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">electric_bolt</span>
+<div>
+<p class="font-headline-sm text-[14px] text-on-surface">Express Delivery</p>
+<p class="font-body-sm text-body-sm text-outline">Guaranteed 24-48h arrival</p>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary-container" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+<div>
+<p class="font-headline-sm text-[14px] text-on-surface">In Stock Only</p>
+<p class="font-body-sm text-body-sm text-outline">Exclude out of stock models</p>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary-container" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container cursor-pointer">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px]">percent</span>
+<div>
+<p class="font-headline-sm text-[14px] text-on-surface">Discount Offers (20%+)</p>
+<p class="font-body-sm text-body-sm text-outline">Exclusive promotional discounts</p>
+</div>
+</div>
+<input class="w-5 h-5 rounded accent-primary-container" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Buttons Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center gap-space-sm">
+<button class="flex-1 py-3 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="resetFiltersInner">
+          Reset All
+        </button>
+<button class="flex-[2] py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-md active:scale-98 transition-transform" id="applyFiltersBtn">
+          Apply Filters (2)
+        </button>
+</div>
+</div>
+</div>
+<!-- Quick Look Modal Drawer -->
+<div class="fixed inset-0 z-50 hidden" id="quickViewModal">
+<div class="absolute inset-0 bg-on-background/50 backdrop-blur-sm transition-opacity" id="quickViewBackdrop"></div>
+<div class="absolute inset-x-0 bottom-0 bg-surface-container-lowest rounded-t-2xl shadow-2xl p-space-md flex flex-col gap-space-sm animate-slide-up">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Quick Overview</span>
+<button class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container text-on-surface-variant" id="closeQuickViewBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-24 h-28 rounded-lg bg-surface-container-low shrink-0 overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Focused product thumbnail preview highlighting minimal modern product details with crisp contrast." id="quickViewImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcY-DxiRzLAHQ3EiGuG7U8ncgnBwx9qwqOjuHTJA_JMc6oH7GQ_Y3BrvU284Bu0wsbHgOACkh-5Qo1HTeG_5sWvcm4ug7i4t_4gzQhCMk-88K2-NTtqoYp3Zs_oFK9srY_zCxZrts3Qiw-V4_Ko0Q3bnTcFiuE1cRh7regcZezgZOlcVzp0HEQivp3IT524irArq-LRJnJZeaF8sxvrI8qBms1RM7GrtucDCxxawMRF7muoxfutxTN"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate" id="quickViewTitle">Selected Product</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate" id="quickViewSub">Premium Quality Spec</p>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-price-md text-price-md text-on-surface" id="quickViewPrice">₹2,999</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Special Offer</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-2">
+<button class="flex-1 py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-md" id="quickViewAddBag">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add to Bag</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-surface-container text-on-surface flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Category pills interaction
+    const categoryPills = document.querySelectorAll('.category-pill');
+    categoryPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        categoryPills.forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        pill.classList.remove('bg-surface-container', 'text-on-surface');
+        pill.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Wishlist Heart toggles with micro-pop
+    const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+    wishlistBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFavorited = icon.textContent.trim() === 'favorite';
+        if (isFavorited) {
+          icon.textContent = 'favorite_border';
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-error');
+          btn.classList.add('text-outline');
+        } else {
+          icon.textContent = 'favorite';
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.remove('text-outline');
+          btn.classList.add('text-error');
+        }
+      });
+    });
+
+    // Layout Toggle (2-Col Grid vs 1-Col List)
+    const gridToggleBtn = document.getElementById('gridToggleBtn');
+    const listToggleBtn = document.getElementById('listToggleBtn');
+    const productGallery = document.getElementById('productGallery');
+    const productCards = document.querySelectorAll('.product-card');
+
+    gridToggleBtn.addEventListener('click', () => {
+      productGallery.className = 'grid grid-cols-2 gap-gutter-sm';
+      gridToggleBtn.className = 'w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-sm transition-all';
+      listToggleBtn.className = 'w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface transition-all';
+      productCards.forEach(c => {
+        c.className = 'product-card group flex flex-col bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative';
+      });
+    });
+
+    listToggleBtn.addEventListener('click', () => {
+      productGallery.className = 'flex flex-col gap-space-sm';
+      listToggleBtn.className = 'w-8 h-8 rounded-full flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-sm transition-all';
+      gridToggleBtn.className = 'w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface transition-all';
+      productCards.forEach(c => {
+        c.className = 'product-card group flex flex-row gap-space-sm bg-surface-container-lowest rounded-xl p-2.5 shadow-sm hover:shadow-md transition-all relative items-center';
+        const imgWrap = c.querySelector('div:first-child');
+        if (imgWrap) imgWrap.style.width = '110px';
+      });
+    });
+
+    // Sort Dropdown Simulation
+    const sortDropdownTrigger = document.getElementById('sortDropdownTrigger');
+    const sortMenu = document.getElementById('sortMenu');
+    const sortCurrentLabel = document.getElementById('sortCurrentLabel');
+    const sortOptions = document.querySelectorAll('.sort-option');
+
+    sortDropdownTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sortMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      if (!sortMenu.classList.contains('hidden')) {
+        sortMenu.classList.add('hidden');
+      }
+    });
+
+    sortOptions.forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sortOptions.forEach(o => {
+          o.classList.remove('text-primary', 'font-semibold', 'bg-surface-container-low');
+          o.classList.add('text-on-surface');
+        });
+        opt.classList.add('text-primary', 'font-semibold', 'bg-surface-container-low');
+        opt.classList.remove('text-on-surface');
+        sortCurrentLabel.textContent = opt.dataset.sort;
+        sortMenu.classList.add('hidden');
+      });
+    });
+
+    // Filter Bottom Sheet modal triggers
+    const filterModal = document.getElementById('filterModal');
+    const filterSheetTrigger = document.getElementById('filterSheetTrigger');
+    const closeFilterBtn = document.getElementById('closeFilterBtn');
+    const filterBackdrop = document.getElementById('filterBackdrop');
+    const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+
+    function toggleFilterModal(open) {
+      if (open) {
+        filterModal.classList.remove('hidden');
+      } else {
+        filterModal.classList.add('hidden');
+      }
+    }
+
+    filterSheetTrigger.addEventListener('click', () => toggleFilterModal(true));
+    closeFilterBtn.addEventListener('click', () => toggleFilterModal(false));
+    filterBackdrop.addEventListener('click', () => toggleFilterModal(false));
+    applyFiltersBtn.addEventListener('click', () => toggleFilterModal(false));
+
+    // Remove Individual Filter Chips
+    const removeChipBtns = document.querySelectorAll('.remove-chip');
+    const clearAllChipsBtn = document.getElementById('clearAllChips');
+    const appliedChipsBar = document.getElementById('appliedChipsBar');
+    const activeFilterBadge = document.getElementById('activeFilterBadge');
+
+    removeChipBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const chip = btn.closest('.chip-item');
+        if (chip) chip.remove();
+        updateFilterBadge();
+      });
+    });
+
+    clearAllChipsBtn.addEventListener('click', () => {
+      appliedChipsBar.querySelectorAll('.chip-item').forEach(c => c.remove());
+      updateFilterBadge();
+    });
+
+    function updateFilterBadge() {
+      const remaining = appliedChipsBar.querySelectorAll('.chip-item').length;
+      if (remaining === 0) {
+        activeFilterBadge.classList.add('hidden');
+        appliedChipsBar.classList.add('hidden');
+      } else {
+        activeFilterBadge.textContent = remaining;
+      }
+    }
+
+    // Quick View Bottom Modal triggers
+    const quickViewModal = document.getElementById('quickViewModal');
+    const quickViewBackdrop = document.getElementById('quickViewBackdrop');
+    const closeQuickViewBtn = document.getElementById('closeQuickViewBtn');
+    const quickviewBtns = document.querySelectorAll('.quickview-btn');
+    const quickViewTitle = document.getElementById('quickViewTitle');
+    const quickViewPrice = document.getElementById('quickViewPrice');
+    const quickViewSub = document.getElementById('quickViewSub');
+
+    quickviewBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.product-card');
+        const title = card.querySelector('h3').textContent;
+        const price = card.querySelector('.font-price-md').textContent;
+        const sub = card.querySelector('p').textContent;
+
+        quickViewTitle.textContent = title;
+        quickViewPrice.textContent = price;
+        quickViewSub.textContent = sub;
+        quickViewModal.classList.remove('hidden');
+      });
+    });
+
+    closeQuickViewBtn.addEventListener('click', () => quickViewModal.classList.add('hidden'));
+    quickViewBackdrop.addEventListener('click', () => quickViewModal.classList.add('hidden'));
+
+    // Quick View Add to Cart action
+    const quickViewAddBag = document.getElementById('quickViewAddBag');
+    quickViewAddBag.addEventListener('click', () => {
+      const originalHtml = quickViewAddBag.innerHTML;
+      quickViewAddBag.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span> Added!`;
+      quickViewAddBag.classList.remove('bg-primary-container');
+      quickViewAddBag.classList.add('bg-tertiary-container');
+      setTimeout(() => {
+        quickViewModal.classList.add('hidden');
+        quickViewAddBag.innerHTML = originalHtml;
+        quickViewAddBag.classList.add('bg-primary-container');
+        quickViewAddBag.classList.remove('bg-tertiary-container');
+      }, 700);
+    });
+
+    // Clear Search query feedback button
+    const clearQueryBtn = document.getElementById('clearQueryBtn');
+    clearQueryBtn.addEventListener('click', () => {
+      clearQueryBtn.closest('section').style.display = 'none';
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-[10px] leading-tight">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 transition-colors text-primary-container font-semibold" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-[10px] leading-tight">Catalog</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 transition-colors text-primary-container font-semibold" data-path="catalog" href="#"><span class="material-symbols-outlined text-[22px]">favorite_border</span><span class="font-label-sm text-[10px] leading-tight">Wishlist</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-2 px-1 min-w-[12px] h-[12px] rounded-full bg-primary-container text-on-primary font-label-sm text-[8px] flex items-center justify-center leading-none">2</span></div><span class="font-label-sm text-[10px] leading-tight">Cart</span></a><a class="flex flex-col items-center justify-center flex-1 h-full gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="account" href="#"><span class="material-symbols-outlined text-[22px]">person_outline</span><span class="font-label-sm text-[10px] leading-tight">Account</span></a></div></nav></body></html>
